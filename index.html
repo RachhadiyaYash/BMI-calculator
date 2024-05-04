@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>BMI Calculator</title>
+</head>
+
+<body class="flex items-center justify-center h-screen m-0 bg-blue-900">
+    <div class="border rounded-lg text-center p-12 bg-white">
+        <p class="text-3xl my-3 ">BMI CALCULATOR</p>
+        <p id="error" class="my-3"></p>
+        <div class="text-left">
+            <label class="text-xl text-bold ">Height (cm)</label><br>
+            <input type="text" name="" id="userHeight" class="border rounded-lg p-2">
+            <br>
+            <br>
+            <label>Weight (kg)</label><br>
+            <input type="text" name="" id="userWeight" class="border rounded-lg p-2">
+            <br>
+            <br>
+            <button class="bg-green-300 w-full p-2 rounded-full" onclick="countBmi()">Calculate</button>
+            <br><br>
+            <p>
+                yout BMI is :
+             </p>
+         
+            <p id="resultTag"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
